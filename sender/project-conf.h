@@ -2,10 +2,6 @@
 #ifndef PROJECT_CONF_H_
 #define PROJECT_CONF_H_
 
-#define NATIVE_CONF_INTERFACE "tun0"
-#define NATIVE_NET_IF "tun0"
-#define NATIVE_INTERFACE "tun0"
-
 #define UIP_CONF_IPV6 1
 
 #define UIP_CONF_BUFFER_SIZE 1280
