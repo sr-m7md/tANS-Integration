@@ -34,7 +34,7 @@ Compression
 Transmission
  - Encoded packets are transmitted via UDP between nodes (in the test setup — loopback to the same node).
    
-![Transmission](./photo/photo2.png)
+![Transmission](./photo/photo1.png)
 
 Decoding
  - Messages are successfully reconstructed on the receiving side without loss of information.
