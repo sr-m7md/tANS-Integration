@@ -28,7 +28,7 @@ Initialization
 
 Compression
  - String messages are encoded into a compact bitstream using the tANS method.
-   
+
 ![Compression](./photo/photo1.png)
 
 Transmission
