@@ -218,3 +218,60 @@ You should see something like this:
 
 If something went wrong, I strongly recommend watching this video:
 https://www.youtube.com/watch?v=a4radETt04U&list=LL&index=21
+
+---
+
+2) Cloning your project:
+```
+cd ~
+mkdir tans-project && cd tans-project
+
+git clone https://github.com/Andezion/tANS-Integration.git
+cd tans-contiki-demo
+```
+3) Installing additional tools:
+```
+sudo apt install -y socat tcpdump wireshark netcat-openbsd
+
+sudo modprobe tun
+ls -la /dev/net/tun
+```
+If you want to check the operation from different computers, then:
+4.1) Terminal 1 - Receiver:
+```
+cd ~/tans-project/tANS-Integration/receiver
+make TARGET=native clean
+make TARGET=native
+sudo ./build/native/receiver.native
+```
+5.1) Terminal 2 - Sender:
+```
+cd ~/tans-project/tANS-Integration/sender
+make TARGET=native clean  
+make TARGET=native
+sudo ./build/native/sender.native
+```
+6.1) Terminal 3 - Network settings:
+```
+ip link show | grep tun
+
+sudo sysctl -w net.ipv6.conf.all.forwarding=1
+
+sudo ip link add name br0 type bridge
+sudo ip link set br0 up
+```
+Error) 
+Problem: Failed to open tun device
+```
+sudo chmod 666 /dev/net/tun
+```
+Problem: Cannot find device tun1
+```
+sudo ip tuntap add mode tun dev tun1
+sudo ip link set tun1 up
+```
+Problem: Packets are not reaching their destination
+```
+sudo tcpdump -i any udp port 5678 -v
+ping6 fd00::302:304:506:708
+```
