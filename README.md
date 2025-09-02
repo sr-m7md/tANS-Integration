@@ -185,7 +185,7 @@ Native support for Contiki-NG RTOS with proper process management
 - Compression Algorithm: table-based Asymmetric Numeral Systems (tANS)
 - Block Size: 64-symbol alphabet with configurable frequency distribution
 - Target Platform: Native target (Linux/Unix) with TUN interface support
-- Packet Size: 518 bytes per compressed packet (including headers and metadata)
+- Packet Size: 1024 bytes per compressed packet (including headers and metadata)
 - Compression Performance: ~0.59-0.62 compression ratio for typical English text
 - Network Architecture: Point-to-point communication using fd00::/64 IPv6 local addresses
 - Build System: Contiki-NG Makefile system with modular source file inclusion
