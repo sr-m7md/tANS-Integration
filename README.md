@@ -194,4 +194,24 @@ Native support for Contiki-NG RTOS with proper process management
 ---
 
 ## Setup  
+1) Installing Contiki-NG
+``` 
+sudo apt update && sudo apt upgrade -y
 
+sudo apt install -y build-essential git wget unzip python3-pip python3-setuptools
+sudo apt install -y gcc-arm-none-eabi doxygen ant default-jdk
+sudo apt install -y libcoap-3-dev libssl-dev
+
+cd ~
+git clone https://github.com/contiki-ng/contiki-ng.git
+cd contiki-ng
+
+echo 'export CONTIKI=~/contiki-ng' >> ~/.bashrc
+source ~/.bashrc
+
+cd examples/hello-world
+make TARGET=native
+sudo ./hello-world.native
+```
+You should see something like this:
+![helper](./photo/photo1.png)
