@@ -21,8 +21,26 @@ The integration of tANS into Contiki-NG, an operating system for the Internet of
 ## Final result  
 As a result of this work, the tANS algorithm was integrated into the Contiki-NG operating system!
 
-To begin with, on the local device, I managed to build a single process that combines: initialisation of the encoder and decoder based on a given alphabet with different symbol frequencies, compression of string messages into a compact bit representation, transmission of received packets via UDP between nodes (in the test — to itself), successful decoding of messages on the receiving side.
-Experimental measurements showed that the compression ratio was ~0.6, which confirms the effectiveness of the tANS method in conditions of limited resources. Thus, the possibility of using tANS to reduce network traffic and energy consumption in Contiki-NG-based IoT scenarios has been proven.
+On the local device, I successfully implemented a single process that integrates the following components:
+
+Initialization
+ - Encoder and decoder are created based on a predefined alphabet with weighted symbol frequencies (spaces, vowels, consonants).
+
+Compression
+ - String messages are encoded into a compact bitstream using the tANS method.
+
+Transmission
+ - Encoded packets are transmitted via UDP between nodes (in the test setup — loopback to the same node).
+
+Decoding
+ - Messages are successfully reconstructed on the receiving side without loss of information.
+
+Experimental evaluation
+ - Average compression ratio: ~0.6.
+ - Confirms the efficiency of tANS under constrained memory, bandwidth, and energy conditions.
+
+Conclusion
+- The integration demonstrates that tANS can be applied in Contiki-NG-based IoT systems to reduce network traffic and power consumption.
 
 Next, I decided to check the network interaction.
 Two nodes in the network:
