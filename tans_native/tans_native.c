@@ -29,10 +29,8 @@ AUTOSTART_PROCESSES(&tans_combined_process);
 static void init_tans_alphabet(uint8_t *alphabet) {
     int idx = 0;
 
-    // 20 пробелов для высокой частоты
     for (int i = 0; i < 20; i++) alphabet[idx++] = ' ';
 
-    // 3 повтора гласных для средней частоты
     for (int i = 0; i < 3; i++) {
         alphabet[idx++] = 'a';
         alphabet[idx++] = 'e';
@@ -41,13 +39,11 @@ static void init_tans_alphabet(uint8_t *alphabet) {
         alphabet[idx++] = 'u';
     }
 
-    // Согласные по частоте использования
     const char consonants[] = "nrtlsdhcfmpgwybvkjxqz";
     for (int i = 0; i < strlen(consonants) && idx < 64; i++) {
         alphabet[idx++] = consonants[i];
     }
 
-    // Заполняем оставшиеся места
     while (idx < 64) {
         alphabet[idx++] = '.';
     }
@@ -142,14 +138,11 @@ PROCESS_THREAD(tans_combined_process, ev, data) {
 
     LOG_INFO("tANS Combined Sender/Receiver starting\n");
 
-    // Инициализация encoder и decoder
     init_tans_encoder();
     init_tans_decoder();
 
-    // Регистрация UDP соединения (слушаем на SERVER_PORT, отправляем с CLIENT_PORT)
     simple_udp_register(&udp_conn, UDP_SERVER_PORT, NULL, UDP_CLIENT_PORT, udp_rx_callback);
 
-    // Устанавливаем адрес назначения (отправляем себе для тестирования)
     uip_ip6addr(&dest_ipaddr, 0xfd00, 0, 0, 0, 0x302, 0x304, 0x506, 0x708);
 
     LOG_INFO("Waiting for tANS packets on UDP port %u\n", UDP_SERVER_PORT);
@@ -160,7 +153,6 @@ PROCESS_THREAD(tans_combined_process, ev, data) {
     while(1) {
         PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
 
-        // Отправка сообщения
         const char* message = test_messages[message_index];
         message_index = (message_index + 1) % 5;
 
@@ -179,7 +171,6 @@ PROCESS_THREAD(tans_combined_process, ev, data) {
             packet.state = encoded_result.state;
             packet.bitstream_size = encoded_result.bitstream_size;
 
-            // Копирование битстрима
             memset(packet.bitstream, 0, sizeof(packet.bitstream));
             for (int i = 0; i < encoded_result.bitstream_size; i++) {
                 int byte_idx = i / 8;
