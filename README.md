@@ -215,3 +215,6 @@ sudo ./hello-world.native
 ```
 You should see something like this:
 ![helper](./photo/photo1.png)
+
+If something went wrong, I strongly recommend watching this video:
+https://www.youtube.com/watch?v=a4radETt04U&list=LL&index=21
