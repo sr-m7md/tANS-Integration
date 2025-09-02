@@ -42,6 +42,9 @@ Experimental evaluation
 Conclusion
 - The integration demonstrates that tANS can be applied in Contiki-NG-based IoT systems to reduce network traffic and power consumption.
 
+
+
+
 Next, I decided to check the network interaction.
 Two nodes in the network:
 
