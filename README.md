@@ -151,12 +151,45 @@ I don't just have a working codec in simulation, but two real nodes that exchang
 ---
 
 ## Features  
+- tANS Compression Algorithm: 
+Implementation of table-based Asymmetric Numeral Systems for efficient text compression
 
+- Frequency-Based Alphabet: 
+Custom 64-symbol alphabet optimized for English text with weighted character frequencies (20 spaces, 3 vowels each, consonants by usage frequency)
+
+- UDP Network Communication: 
+IPv6 UDP-based packet transmission between sender and receiver nodes
+
+- Dual Operation Modes:
+Separate sender/receiver applications for distributed testing
+Combined application for local loopback testing
+
+- Real-time Compression Metrics: 
+Live compression ratio calculation and performance logging
+
+- Embedded-Friendly Design: 
+Memory-efficient implementation suitable for IoT devices with limited resources
+
+- Custom Packet Structure: 
+Binary packet format with state preservation for reliable decompression
+
+- Contiki-NG Integration: 
+Native support for Contiki-NG RTOS with proper process management
 
 ---
 
 ## Technologies  
-
+- Operating System: Contiki-NG (IoT-focused RTOS)
+- Programming Language: C (ANSI C compatible)
+- Network Protocol: IPv6 UDP with Simple UDP API
+- Compression Algorithm: table-based Asymmetric Numeral Systems (tANS)
+- Block Size: 64-symbol alphabet with configurable frequency distribution
+- Target Platform: Native target (Linux/Unix) with TUN interface support
+- Packet Size: 518 bytes per compressed packet (including headers and metadata)
+- Compression Performance: ~0.59-0.62 compression ratio for typical English text
+- Network Architecture: Point-to-point communication using fd00::/64 IPv6 local addresses
+- Build System: Contiki-NG Makefile system with modular source file inclusion
+- Interface: TUN/TAP virtual network interfaces for testing and deployment
 
 ---
 
