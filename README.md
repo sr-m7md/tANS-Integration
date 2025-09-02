@@ -89,7 +89,6 @@ Unique symbols: 28
 Symbol frequencies: ' ':20 'a':3 'e':3 'i':3 'o':3 'u':3 'n':1 'r':1 't':1 'l':1 's':1 'd':1 'h':1 'c':1 'f':1 'm':1 'p':1 'g':1 'w':1 'y':1 'b':1 'v':1 'k':1 'j':1 'x':1 'q':1 'z':1 '.':8 
 [INFO: tANS Receiver] Waiting for tANS packets on UDP port 5678
 
-# И затем каждые 10 секунд:
 [INFO: tANS Receiver] Received UDP packet from fd00::302:304:506:709 port 8765, length 518
 [INFO: tANS Receiver] Received tANS packet: state=105, bitstream_size=52 bits
 [INFO: tANS Receiver] Successfully decoded message: 'hello world' (11 bytes)
@@ -133,7 +132,6 @@ Unique symbols: 28
 Symbol frequencies: ' ':20 'a':3 'e':3 'i':3 'o':3 'u':3 'n':1 'r':1 't':1 'l':1 's':1 'd':1 'h':1 'c':1 'f':1 'm':1 'p':1 'g':1 'w':1 'y':1 'b':1 'v':1 'k':1 'j':1 'x':1 'q':1 'z':1 '.':8 
 [INFO: tANS Receiver] Waiting for tANS packets on UDP port 5678
 
-# И затем каждые 10 секунд:
 [INFO: tANS Receiver] Received UDP packet from fd00::302:304:506:709 port 8765, length 518
 [INFO: tANS Receiver] Received tANS packet: state=105, bitstream_size=52 bits
 [INFO: tANS Receiver] Successfully decoded message: 'hello world' (11 bytes)
