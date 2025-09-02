@@ -275,3 +275,21 @@ Problem: Packets are not reaching their destination
 sudo tcpdump -i any udp port 5678 -v
 ping6 fd00::302:304:506:708
 ```
+
+---
+
+If you want to check a simpler option:
+4.2) Testing locally (simple option)
+```
+cd ~/tans-project/tans-contiki-demo/combined
+make TARGET=native
+sudo ./build/native/tans_combined.native
+```
+Finally) Cleaning after testing
+```
+sudo pkill -f ".native"
+
+sudo ip link delete tun0 2>/dev/null || true
+sudo ip link delete tun1 2>/dev/null || true
+sudo ip link delete br0 2>/dev/null || true
+```
