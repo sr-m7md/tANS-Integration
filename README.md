@@ -127,3 +127,16 @@ Key conclusion:
 I don't just have a working codec in simulation, but two real nodes that exchange compressed data via UDP and correctly restore the original text. This proves that tANS can be integrated into the Contiki-NG stack to reduce network traffic in IoT.
 
 ---
+
+## Features  
+
+
+---
+
+## Technologies  
+
+
+---
+
+## Setup  
+
