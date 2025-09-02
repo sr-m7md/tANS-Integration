@@ -28,12 +28,12 @@ Initialization
 
 Compression
  - String messages are encoded into a compact bitstream using the tANS method.
- - 
+   
 ![Compression](./photo/photo1.png)
 
 Transmission
  - Encoded packets are transmitted via UDP between nodes (in the test setup — loopback to the same node).
- - 
+   
 ![Transmission](./photo/photo2.png)
 
 Decoding
