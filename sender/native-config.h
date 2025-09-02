@@ -1,6 +1,6 @@
 #ifndef WORK1_NATIVE_CONFIG_H
 #define WORK1_NATIVE_CONFIG_H
 
-#define NATIVE_INTERFACE "tun0"
+#define NATIVE_INTERFACE "tun1"
 
 #endif //WORK1_NATIVE_CONFIG_H
