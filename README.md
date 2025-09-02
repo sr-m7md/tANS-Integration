@@ -28,9 +28,13 @@ Initialization
 
 Compression
  - String messages are encoded into a compact bitstream using the tANS method.
+ - 
+![Compression](./photo/photo1.png)
 
 Transmission
  - Encoded packets are transmitted via UDP between nodes (in the test setup — loopback to the same node).
+ - 
+![Transmission](./photo/photo2.png)
 
 Decoding
  - Messages are successfully reconstructed on the receiving side without loss of information.
@@ -42,8 +46,7 @@ Experimental evaluation
 Conclusion
 - The integration demonstrates that tANS can be applied in Contiki-NG-based IoT systems to reduce network traffic and power consumption.
 
-
-
+---
 
 Next, I decided to check the network interaction.
 Two nodes in the network:
