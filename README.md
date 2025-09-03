@@ -147,6 +147,7 @@ Symbol frequencies: ' ':20 'a':3 'e':3 'i':3 'o':3 'u':3 'n':1 'r':1 't':1 'l':1
 ---
 
 tANS Compression over TCP in C++
+
 Implemented tANS (table-based Asymmetric Numeral Systems) compression over TCP in C++ as part of the networking experiments for the Contiki project. This allowed me to test real-time compressed data transmission in a network environment.
 
 Highlights:
