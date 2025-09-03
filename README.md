@@ -144,6 +144,20 @@ Symbol frequencies: ' ':20 'a':3 'e':3 'i':3 'o':3 'u':3 'n':1 'r':1 't':1 'l':1
 [INFO: tANS Receiver] Compression ratio: 0.59
 [INFO: tANS Receiver] Final state: 64
 ```
+---
+
+tANS Compression over TCP in C++
+Implemented tANS (table-based Asymmetric Numeral Systems) compression over TCP in C++ as part of the networking experiments for the Contiki project. This allowed me to test real-time compressed data transmission in a network environment.
+
+Highlights:
+- Full sender/receiver implementation using TCP sockets.
+- Encoding/decoding with tANS, handling arbitrary byte streams.
+- Collected detailed statistics: symbol frequencies, block sizes, compression ratio, and bitstream size.
+- Tested with messages of several KB to verify reliability and efficiency.
+- Gained hands-on experience with network programming and compression integration.
+
+Example output:
+![Transmission](./photo/photo3.png)
 
 Key conclusion:
 I don't just have a working codec in simulation, but two real nodes that exchange compressed data via UDP and correctly restore the original text. This proves that tANS can be integrated into the Contiki-NG stack to reduce network traffic in IoT.
